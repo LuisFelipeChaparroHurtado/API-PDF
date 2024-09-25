@@ -23,7 +23,7 @@ def extract_pdf():
             return jsonify({'error': 'El archivo PDF no se encuentra en la ruta especificada'}), 400
 
         extracted_data = extract_data_from_pdf(pdf_path)
-        print(extracted_data)
+        #print(extracted_data)
 
         if extracted_data is None:
             return jsonify({'error': 'No se encontró el resumen de abonados'}), 200
